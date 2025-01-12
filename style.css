@@ -32,15 +32,38 @@ header p {
     border-radius: 5px;
     background-color: deepskyblue;
 }
+.project1 {
+    border: 1px solid black;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: deepskyblue;
+}
 .project p {
+    color: black;
+}
+.project1 p {
     color: black;
 }
 .project img {
     max-width: 100%;
     height: auto;
     border-radius: 5px;
+    height: 300px;
+    width: 700px;
+}
+.project1 img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    height: 400px;
+    width: 700px;
 }
 .project-title {
+    font-size: 20px;
+    margin: 10px 0;
+}
+.project1-title {
     font-size: 20px;
     margin: 10px 0;
 }
