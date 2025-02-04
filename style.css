@@ -90,3 +90,26 @@ footer a {
     text-decoration: none;
     margin: 0 5px;
 }
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+    .project {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .project {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .project {
+        width: 100%;
+    }
+}
