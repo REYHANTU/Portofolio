@@ -4,133 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portofolio Website</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="./gambar/ilustrasi_portofolio.png?v=2">   
+    <!-- <link rel="icon" type="image/png" sizes="32x32" href="./gambar/ilustrasi_portofolio.png?v=2">    -->
+    <link rel="icon" type="image/png" href="./gambar/profile/logo_website.png">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="projects.html">Proyek</a></li>
+            <li><a href="sertifikasi.html">Sertifikasi</a></li>
+            <li><a href="organisasi.html">Organisasi</a></li>
+        </ul>
+    </nav>
+
     <header>
-        <img src="./gambar/profile.jpg" alt="Profile Picture">
+        <img src="./gambar//profile/profile.jpg" alt="Profile Picture">
         <h1>Reyhan S.Kom.</h1>
         <strong><p>IPK: 3.64</p></strong>
-        <p>Saya adalah seorang Fresh Graduated jurusan Teknik Informatika Universitas Tarumanagara.
-            Saya pernah mengikuti kegiatan Studi Independen MSIB selama 4 bulan di bidang Cyber Security.
-            Saya sudah terbiasa dalam menggunakan bahasa pemrograman Python dan My SQL.
-        </p>
+        <div class="about-me">
+            <h2>Tentang Saya</h2>
+            <p>Saya adalah seorang Fresh Graduated jurusan Teknik Informatika Universitas Tarumanagara.
+                Saya pernah mengikuti kegiatan Studi Independen MSIB selama 4 bulan di bidang Cyber Security.
+                Saya sudah terbiasa dalam menggunakan bahasa pemrograman Python dan MySQL. 
+                Saya juga sudah menguasai berbagai macam framework yang digunakan untuk pembuatan website/aplikasi diantaranya yaitu Laravel, .Net, ReactJs, Flutter, dan lain-lain.
+            </p>
+        </div>
     </header>
-    
-    <div class="container">
-        <div class="search-bar">
-            <input type="text" id="searchInput" placeholder="Cari judul projek..." onkeyup="filterProjects()">
+
+    <!-- Box Keahlian -->
+    <section class="skills-container" id="skills">
+        <div class="skills-box hardskill">
+            <h2>Hard Skill 💻</h2>
+            <ul>
+                <li>Python</li>
+                <li>C</li>
+                <li>C++</li>
+                <li>C#</li>
+                <li>Unity</li>
+                <li>Java</li>
+                <li>Oracle</li>
+                <li>MongoDB</li>
+                <li>MySQL</li>
+                <li>PostgreSQL</li>
+                <li>Angular</li>
+                <li>Kotlin</li>
+                <li>Swift</li>
+                <li>Dart</li>
+                <li>PHP</li>
+                <li>JavaScript</li>
+                <li>Go Language</li>
+                <li>React JS</li>
+                <li>Node JS</li>
+                <li>Rest API</li>
+                <li>Laravel</li>
+                <li>ASP.Net</li>
+                <li>Wordpress</li>
+                <li>GIT</li>
+            </ul>
         </div>
-    
-        <div id="projects">
-            <div class="project" data-title="Projek A">
-                <h2 class="project-title">Analisis Data Covid-19</h2>
-                <img src="./gambar/analisa_data_covid.jpg" alt="Projek A">
-                <p>Februari 2022 - Juni 2022</p>
-                <p>Analisa data covid-19 dibandingkan dengan data populasi dunia ketika masa pandemi covid-19 dan kualitas udara selama pandemi covid-19 untuk tugas akhir mata kuliah Big Data</p>
-            </div>
-            <div class="project" data-title="Projek B">
-                <h2 class="project-title">Website E-Commerce</h2>
-                <img src="./gambar/shopbag_1.png" alt="Projek B">
-                <img src="./gambar/shopbag_2.png" alt="Projek B">
-                <img src="./gambar/shopbag_3.png" alt="Projek B">
-                <img src="./gambar/shopbag_4.png" alt="Projek B">
-                <br><br>
-                <strong><a href="https://github.com/REYHANTU/Project_UTS_WebProgramming">Link Github Project Mata Kuliah Web Programming Kelompok</a></strong>
-                <p>September 2022 - Desember 2022</p>
-                <p>Merancang aplikasi berbasis website E-commerce untuk tugas akhir mata kuliah Web Programming</p>
-            </div>
-            <div class="project" data-title="Projek C">
-                <h2 class="project-title">Game Tetris</h2>
-                <img src="./gambar/tampilan_home_game_tetris.png" alt="Projek C">
-                <img src="./gambar/login_game_tetris.jpg" alt="Projek C">
-                <img src="./gambar/pengaturan_game_tetris.jpg" alt="Projek C">
-                <img src="./gambar/tampilan_game_tetris.jpg" alt="Projek C">
-                <p>Maret 2023 - Juli 2023</p>
-                <p>Merancang aplikasi game 2D (2 Dimensi) yaitu game Tetris untuk tugas akhir mata kuliah Software Development</p>
-            </div>
-            <div class="project" data-title="Projek D">
-                <h2 class="project-title">Terra-Apps</h2>
-                <strong><a href="https://github.com/StewDoger/Terra-Apps">Link Github Project Mata Kuliah Mobile Programming Kelompok</a></strong>
-                <p>Maret 2023 - Juli 2023</p>
-                <p>Merancang aplikasi berbasis Android yaitu aplikasi bertemakan Instagram untuk tugas tengah semester mata kuliah Mobile Programming</p>
-            </div>
-            <div class="project" data-title="Projek E">
-                <h2 class="project-title">Game UAS Mobile Programming</h2>
-                <img src="./gambar/tampilan_home_game_uas_mobile_programming.jpg" alt="Projek E">
-                <img src="./gambar/tampilan_game_uas_mobile_programming.jpg" alt="Projek E">
-                <p>Juni 2023 - Juli 2023</p>
-                <p>Membuat aplikasi game 2D (2 Dimensi) yaitu game Adventure untuk tugas akhir mata kuliah Mobile Programming Individu</p>
-            </div>
-            <div class="project1" data-title="Projek F">
-                <h2 class="project-title">Chatbot Pembantu Kasir</h2>
-                <img src="./gambar/chatbot_pembantu_kasir.jpg" alt="Projek F">
-                <p>Maret 2023 - Juli 2023</p>
-                <p>Membuat aplikasi chatbot pembantu kasir berbasis Discord menggunakan teknik rule-based untuk tugas akhir mata kuliah Natural Language Processing (NLP)</p>
-            </div>
-            <div class="project" data-title="Projek G">
-                <h2 class="project-title">Penetration Testing/Pengujian Keamanan Website Diskominfo Pemerintah Kota Semarang</h2>
-                <strong><a href="https://github.com/REYHANTU/PenTest-Website-Pemerintah-Kota-Semarang">Link Github Project Studi Independen Cyber Security di PT. Gama Multi Usaha Mandiri</a></strong>
-                <p>Mei 2023 - Juni 2024</p>
-                <p>Melakukan Pengujian Keamanan atau PenTest (Penetration Testing) Website Diskominfo Pemerintah Kota Semarang untuk tugas akhir kegiatan Studi Independen Cyber Security di PT. Gama Multi Usaha Mandiri</p>
-            </div>
-            <div class="project" data-title="Projek H">
-                <h2 class="project-title">Implementasi Metode Klasifikasi Untuk Identifikasi Jenis Kacang Kering Berdasarkan Fitur Morfologi</h2>
-                <strong><a href="https://github.com/REYHANTU/-Implementasi-Metode-Klasifikasi-Untuk-Identifikasi-Jenis-Kacang-Kering-Berdasarkan-Fitur-Morfologi">Link Github Project UTS mata kuliah Machine Learning</a></strong>
-                <p>September 2024 - Oktober 2024</p>
-                <p>Membuat Paper mengenai klasifikasi kacang kering berdasarkan fitur morfologi menggunakan algoritma ANN, KNN, dan Decision Tree untuk project UTS mata kuliah Machine Learning</p>
-            </div>
-            <div class="project" data-title="Projek I">
-                <h2 class="project-title">Prediksi Harga Pangan Daging Sapi Di Kabupaten Pontianak Menggunakan Algoritma SVM dan Decision Tree</h2>
-                <strong><a href="https://github.com/REYHANTU/Prediksi-Harga-Pangan-Daging-Sapi-Di-Kabupaten-Pontianak-Menggunakan-Algoritma-SVM-dan-Decision-Tree">Link Github Project UAS mata kuliah Machine Learning</a></strong>
-                <p>November 2024 - Desember 2024</p>
-                <p>Membuat Paper mengenai prediksi harga pangan daging sapi di Kota Pontianak menggunakan algoritma SVM dan Decision Tree untuk project UAS mata kuliah Machine Learning</p>
-            </div>
-            <div class="project" data-title="Projek J">
-                <h2 class="project-title">Project Akhir Kuliah S1</h2>
-                <img src="./gambar/tampilan_halaman_atas_cryptohorizon.png" alt="Projek J">
-                <img src="./gambar/tampilan_halaman_bawah_cryptohorizon.png" alt="Projek J">
-                <img src="./gambar/tampilan_notifikasi_cryptohorizon.png" alt="Projek J">
-                <br><br>
-                <strong><a href="https://github.com/REYHANTU/Cryptohorizon">Link Github Project Akhir Kuliah S1</a></strong>
-                <p>Juli 2024 - Desember 2024</p>
-                <p>Merancang aplikasi peringkasan berita cryptocurrency berbasis website untuk project akhir kuliah S1</p>
-            </div>
-            <div class="project" data-title="Projek K">
-                <h2 class="project-title">Website Bakmie Ayam Jamur Han</h2>
-                <img src="./gambar/website_bakmie_ayam_jamur_han.png" alt="Projek K">
-                <br><br>
-                <strong><a href="https://github.com/REYHANTU/BakmieAyamJamurHan">Link Github Project Website Bakmie Ayam Jamur Han</a></strong>
-                <p>Januari 2025 - Januari 2025</p>
-                <p>Merancang tampilan website untuk bisnis makanan yang bernama "Bakmie Ayam Jamur Han" menggunakan framework Laravel</p>
-            </div>
-            <div class="project" data-title="Projek L">
-                <h2 class="project-title">Website Login Simple</h2>
-                <img src="./gambar/tampilan_utama_simpleloginapp.png" alt="Projek L">
-                <img src="./gambar/tampilan_dashboard_simpleloginapp.png" alt="Projek L">
-                <br><br>
-                <strong><a href="https://github.com/REYHANTU/Latihan-ASP.Net">Link Github Project Website Login Simple</a></strong>
-                <p>Januari 2025 - Januari 2025</p>
-                <p>Merancang aplikasi login berbasis website menggunakan framework ASP.Net</p>
-            </div>
-            <div class="project2" data-title="Projek M">
-                <h2 class="project-title">Shoe Store App</h2>
-                <img src="./gambar/shoe_store_app.jpeg" alt="Projek M">
-                <br><br>
-                <strong><a href="https://github.com/REYHANTU/shoe_store_app">Link Github Project Shoe Store App</a></strong>
-                <p>Februari 2025 - Februari 2025</p>
-                <p>Merancang aplikasi mobile bertemakan jual beli sepatu menggunakan framework Flutter</p>
-            </div>
-            <div class="project1" data-title="Projek N">
-                <h2 class="project-title">Gemini AI bot to Discord</h2>
-                <img src="./gambar/chatbot_gamini_in_discord.png" alt="Projek N">
-                <br><br>
-                <strong><a href="https://github.com/REYHANTU/Connect-Gemini-to-Discord">Link Github Project Gemini AI bot to Discord</a></strong>
-                <p>Februari 2025 - Februari 2025</p>
-                <p>Merancang aplikasi bot berbasis Gemini AI yang diimplementasikan ke aplikasi Discord</p>
-            </div>
+
+        <div class="skills-box softskill">
+            <h2>Soft Skill 🌟</h2>
+            <ul>
+                <li>Pemecahan Masalah</li>
+                <li>Kerjasama Tim</li>
+                <li>Komunikasi</li>
+                <li>Manajemen Waktu</li>
+                <li>Kepemimpinan</li>
+                <li>Integritas Dalam Kerja</li>
+                <li>Berpikir Kritis</li>
+                <li>Teliti dan Detail-Oriented</li>
+                <li>Kreatif/Inovatif</li>
+                <li>Adaptasi & Fleksibilitas</li>
+                <li>Public Speaking</li>
+            </ul>
         </div>
+    </section>
+
+    <div class="languages">
+        <h2>Bahasa yang Dikuasai 🌍</h2>
+        <ul class="language-skill">
+            <li>Indonesia (Native) <div class="bar-container"><div class="bar" style="width: 100%;"></div></div></li>
+            <li>Inggris (Intermediate) <div class="bar-container"><div class="bar" style="width: 60%;"></div></div></li>
+            <li>Mandarin (Basic) <div class="bar-container"><div class="bar" style="width: 30%;"></div></div></li>
+        </ul>
     </div>
     
     <footer>

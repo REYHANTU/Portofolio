@@ -11,7 +11,7 @@ header {
     text-align: center;
 }
 header img {
-    width: 150px;
+    width: 165px;
     height: 160px;
     border-radius: 50%;
     margin-bottom: 10px;
@@ -22,8 +22,52 @@ header h1 {
 header p {
     margin: 5px 0;
 }
-.container {
-    padding: 20px;
+.about-me, .languages {
+    background: linear-gradient(135deg, #ff7eb3, #6a11cb, #00c6ff);
+    color: white;
+    width: 90%;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: -8px -8px 20px rgba(255, 255, 255, 0.2), 8px 8px 20px rgba(0, 0, 0, 0.6);
+    text-align: justify;
+    margin: auto;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    font-size: 22px;
+    perspective: 1000px;
+    margin-top: 30px;
+}
+.about-me:hover, .languages:hover {
+    transform: scale(1.05) rotateY(10deg) rotateX(5deg);
+    box-shadow: -12px -12px 25px rgba(255, 255, 255, 0.3), 12px 12px 25px rgba(0, 0, 0, 0.7);
+}
+.about-me h2, .languages h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+    margin-top: 10px;
+}
+.language-skill {
+    list-style: none;
+    padding: 0;
+}
+.language-skill li {
+    margin: 10px 0;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.bar-container {
+    width: 70%;
+    height: 10px;
+    background: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.bar {
+    height: 100%;
+    border-radius: 5px;
+    background: black;
 }
 .project {
     border: 1px solid black;
@@ -103,4 +147,275 @@ footer a {
     color:deepskyblue;
     text-decoration: none;
     margin: 0 5px;
+}
+nav {
+    background-color: deepskyblue;
+    padding: 10px 0;
+    text-align: center;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+}
+nav ul li a:hover {
+    background-color: #00bcd4;
+    border-radius: 5px;
+}
+/* Container */
+.container {
+    padding: 20px;
+    width: 80%;
+    margin: auto;
+}
+/* Project & Sertifikasi */
+.project, .sertifikasi {
+    background: linear-gradient(135deg, #ff7eb3, #6a11cb);
+    background: linear-gradient(135deg, #ff7eb3, #6a11cb, #00c6ff);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.project:hover, .sertifikasi:hover {
+    transform: scale(1.05) rotateY(5deg);
+    transform: scale(1.05) rotateY(10deg) rotateX(5deg);
+}
+.project h2, .sertifikasi h2 {
+    margin-bottom: 5px;
+}
+.project a, .sertifikasi a {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: #333;
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.project a:hover, .sertifikasi a:hover {
+    background-color: #555;
+}
+.project1, .sertifikasi {
+    background: linear-gradient(135deg, #ff7eb3, #6a11cb);
+    background: linear-gradient(135deg, #ff7eb3, #6a11cb, #00c6ff);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.project1:hover, .sertifikasi:hover {
+    transform: scale(1.05) rotateY(5deg);
+    transform: scale(1.05) rotateY(10deg) rotateX(5deg);
+}
+.project1 h2, .sertifikasi h2 {
+    margin-bottom: 5px;
+}
+.project1 a, .sertifikasi a {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: #333;
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.project1 a:hover, .sertifikasi a:hover {
+    background-color: #555;
+}
+.project2, .sertifikasi {
+    background: linear-gradient(135deg, #ff7eb3, #6a11cb);
+    background: linear-gradient(135deg, #ff7eb3, #6a11cb, #00c6ff);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.project2:hover, .sertifikasi:hover {
+    transform: scale(1.05) rotateY(5deg);
+    transform: scale(1.05) rotateY(10deg) rotateX(5deg);
+}
+.project2 h2, .sertifikasi h2 {
+    margin-bottom: 5px;
+}
+.project2 a, .sertifikasi a {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: #333;
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.project2 a:hover, .sertifikasi a:hover {
+    background-color: #555;
+}
+.search-container {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 100%; /* Menyamakan dengan .sertifikasi-kategori */
+}
+.search-container input {
+    width: 100%; /* Menyesuaikan dengan parent container */
+    max-width: 1185px; /* Atur max-width agar tetap responsif */
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.sertifikasi-kategori {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #1c1c1c;
+    border-radius: 10px;
+}
+.sertifikasi-kategori h2 {
+    color: #00bcd4;
+}
+/* Container untuk keahlian */
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin: 40px auto;
+    max-width: 1000px;
+}
+
+/* Style untuk box skill */
+.skills-box {
+    width: 45%;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+    color: white;
+    text-align: center;
+}
+
+/* Warna gradient berbeda untuk Hardskill dan Softskill */
+.hardskill {
+    background: linear-gradient(135deg, #ff7eb3, #6a11cb, #00c6ff);
+}
+.hardskill:hover {
+    transform: scale(1.05) rotateY(5deg);
+    transform: scale(1.05) rotateY(10deg) rotateX(5deg);
+}
+.softskill {
+    background: linear-gradient(135deg, #ff7eb3, #6a11cb, #ffcc70);
+    max-height: 600px; /* Membatasi tinggi maksimal soft skill */
+    /* overflow-y: auto;   */
+    /* Menambahkan scroll jika terlalu panjang */
+}
+.softskill:hover {
+    transform: scale(1.05) rotateY(5deg);
+    transform: scale(1.05) rotateY(10deg) rotateX(5deg);
+}
+
+/* Mengatur daftar dalam Hard Skill agar jadi dua kolom */
+.hardskill ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dua kolom */
+    gap: 10px;
+    padding: 0;
+}
+
+/* Style list item */
+.skills-box ul {
+    list-style: none;
+    padding: 0;
+}
+.skills-box ul li {
+    background: rgba(255, 255, 255, 0.2);
+    margin: 8px 0;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+/* Hover effect */
+.skills-box:hover {
+    transform: scale(1.05);
+}
+.skills-box ul li:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+.organisasi {
+    background: linear-gradient(135deg, #ff7eb3, #6a11cb, #00c6ff);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.organisasi:hover {
+    transform: scale(1.05) rotateY(10deg) rotateX(5deg);
+}
+
+.organisasi h3 {
+    margin-bottom: 5px;
+}
+
+.organizations h2 {
+    color: white;
+}
+
+.organisasi a {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: #333;
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.organisasi a:hover {
+    background-color: #555;
+}
+
+body.dark-mode {
+    background-color: #333;
+    color: #eee;
+}
+
+.toggle-button {
+    background: linear-gradient(to bottom, #4a90e2, #2979ff);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease;
+    font-weight: bold;
+}
+
+.dark-mode .toggle-button {
+    color: black; /* Warna teks saat mode gelap */
+}
+
+.toggle-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
 }

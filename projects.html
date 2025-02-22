@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Projects</title>
+    <link rel="icon" type="image/png" href="./gambar/profile/logo_website.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="projects.html">Proyek</a></li>
+            <li><a href="sertifikasi.html">Sertifikasi</a></li>
+            <li><a href="organisasi.html">Organisasi</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Proyek</h1>
+        <p>Berikut adalah beberapa proyek yang pernah saya kerjakan.</p>
+    </header>
+
+    <div class="container">
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Cari judul proyek..." onkeyup="filterProjects()">
+            <p id="searchMessage" style="color: red; display: none;"></p>
+        </div>
+    
+        <div id="projects">
+            <div class="project" data-title="Projek A">
+                <h2 class="project-title">Analisis Data Covid-19</h2>
+                <img src="./gambar/projects/analisa_data_covid.jpg" alt="Projek A">
+                <p>Februari 2022 - Juni 2022</p>
+                <p>Analisa data covid-19 dibandingkan dengan data populasi dunia ketika masa pandemi covid-19 dan kualitas udara selama pandemi covid-19 untuk tugas akhir mata kuliah Big Data</p>
+            </div>
+            <div class="project" data-title="Projek B">
+                <h2 class="project-title">Website E-Commerce</h2>
+                <img src="./gambar/projects/shopbag_1.png" alt="Projek B">
+                <img src="./gambar/projects/shopbag_2.png" alt="Projek B">
+                <img src="./gambar/projects/shopbag_3.png" alt="Projek B">
+                <img src="./gambar/projects/shopbag_4.png" alt="Projek B">
+                <br><br>
+                <strong><a href="https://github.com/REYHANTU/Project_UTS_WebProgramming">Link Github Project Mata Kuliah Web Programming Kelompok</a></strong>
+                <p>September 2022 - Desember 2022</p>
+                <p>Merancang aplikasi berbasis website E-commerce untuk tugas akhir mata kuliah Web Programming</p>
+            </div>
+            <div class="project" data-title="Projek C">
+                <h2 class="project-title">Game Tetris</h2>
+                <img src="./gambar/projects/tampilan_home_game_tetris.png" alt="Projek C">
+                <img src="./gambar/projects/login_game_tetris.jpg" alt="Projek C">
+                <img src="./gambar/projects/pengaturan_game_tetris.jpg" alt="Projek C">
+                <img src="./gambar/projects/tampilan_game_tetris.jpg" alt="Projek C">
+                <p>Maret 2023 - Juli 2023</p>
+                <p>Merancang aplikasi game 2D (2 Dimensi) yaitu game Tetris untuk tugas akhir mata kuliah Software Development</p>
+            </div>
+            <div class="project" data-title="Projek D">
+                <h2 class="project-title">Terra-Apps</h2>
+                <strong><a href="https://github.com/StewDoger/Terra-Apps">Link Github Project Mata Kuliah Mobile Programming Kelompok</a></strong>
+                <p>Maret 2023 - Juli 2023</p>
+                <p>Merancang aplikasi berbasis Android yaitu aplikasi bertemakan Instagram untuk tugas tengah semester mata kuliah Mobile Programming</p>
+            </div>
+            <div class="project" data-title="Projek E">
+                <h2 class="project-title">Game UAS Mobile Programming</h2>
+                <img src="./gambar/projects/tampilan_home_game_uas_mobile_programming.jpg" alt="Projek E">
+                <img src="./gambar/projects/tampilan_game_uas_mobile_programming.jpg" alt="Projek E">
+                <p>Juni 2023 - Juli 2023</p>
+                <p>Membuat aplikasi game 2D (2 Dimensi) yaitu game Adventure untuk tugas akhir mata kuliah Mobile Programming Individu</p>
+            </div>
+            <div class="project1" data-title="Projek F">
+                <h2 class="project-title">Chatbot Pembantu Kasir</h2>
+                <img src="./gambar/projects/chatbot_pembantu_kasir.jpg" alt="Projek F">
+                <p>Maret 2023 - Juli 2023</p>
+                <p>Membuat aplikasi chatbot pembantu kasir berbasis Discord menggunakan teknik rule-based untuk tugas akhir mata kuliah Natural Language Processing (NLP)</p>
+            </div>
+            <div class="project" data-title="Projek G">
+                <h2 class="project-title">Penetration Testing/Pengujian Keamanan Website Diskominfo Pemerintah Kota Semarang</h2>
+                <strong><a href="https://github.com/REYHANTU/PenTest-Website-Pemerintah-Kota-Semarang">Link Github Project Studi Independen Cyber Security di PT. Gama Multi Usaha Mandiri</a></strong>
+                <p>Mei 2023 - Juni 2024</p>
+                <p>Melakukan Pengujian Keamanan atau PenTest (Penetration Testing) Website Diskominfo Pemerintah Kota Semarang untuk tugas akhir kegiatan Studi Independen Cyber Security di PT. Gama Multi Usaha Mandiri</p>
+            </div>
+            <div class="project" data-title="Projek H">
+                <h2 class="project-title">Implementasi Metode Klasifikasi Untuk Identifikasi Jenis Kacang Kering Berdasarkan Fitur Morfologi</h2>
+                <strong><a href="https://github.com/REYHANTU/-Implementasi-Metode-Klasifikasi-Untuk-Identifikasi-Jenis-Kacang-Kering-Berdasarkan-Fitur-Morfologi">Link Github Project UTS mata kuliah Machine Learning</a></strong>
+                <p>September 2024 - Oktober 2024</p>
+                <p>Membuat Paper mengenai klasifikasi kacang kering berdasarkan fitur morfologi menggunakan algoritma ANN, KNN, dan Decision Tree untuk project UTS mata kuliah Machine Learning</p>
+            </div>
+            <div class="project" data-title="Projek I">
+                <h2 class="project-title">Prediksi Harga Pangan Daging Sapi Di Kabupaten Pontianak Menggunakan Algoritma SVM dan Decision Tree</h2>
+                <strong><a href="https://github.com/REYHANTU/Prediksi-Harga-Pangan-Daging-Sapi-Di-Kabupaten-Pontianak-Menggunakan-Algoritma-SVM-dan-Decision-Tree">Link Github Project UAS mata kuliah Machine Learning</a></strong>
+                <p>November 2024 - Desember 2024</p>
+                <p>Membuat Paper mengenai prediksi harga pangan daging sapi di Kota Pontianak menggunakan algoritma SVM dan Decision Tree untuk project UAS mata kuliah Machine Learning</p>
+            </div>
+            <div class="project" data-title="Projek J">
+                <h2 class="project-title">Project Akhir Kuliah S1</h2>
+                <img src="./gambar/projects/tampilan_halaman_atas_cryptohorizon.png" alt="Projek J">
+                <img src="./gambar/projects/tampilan_halaman_bawah_cryptohorizon.png" alt="Projek J">
+                <img src="./gambar/projects/tampilan_notifikasi_cryptohorizon.png" alt="Projek J">
+                <br><br>
+                <strong><a href="https://github.com/REYHANTU/Cryptohorizon">Link Github Project Akhir Kuliah S1</a></strong>
+                <p>Juli 2024 - Desember 2024</p>
+                <p>Merancang aplikasi peringkasan berita cryptocurrency berbasis website untuk project akhir kuliah S1</p>
+            </div>
+            <div class="project" data-title="Projek K">
+                <h2 class="project-title">Website Bakmie Ayam Jamur Han</h2>
+                <img src="./gambar/projects/website_bakmie_ayam_jamur_han.png" alt="Projek K">
+                <br><br>
+                <strong><a href="https://github.com/REYHANTU/BakmieAyamJamurHan">Link Github Project Website Bakmie Ayam Jamur Han</a></strong>
+                <p>Januari 2025 - Januari 2025</p>
+                <p>Merancang tampilan website untuk bisnis makanan yang bernama "Bakmie Ayam Jamur Han" menggunakan framework Laravel</p>
+            </div>
+            <div class="project" data-title="Projek L">
+                <h2 class="project-title">Website Login Simple</h2>
+                <img src="./gambar/projects/tampilan_utama_simpleloginapp.png" alt="Projek L">
+                <img src="./gambar/projects/tampilan_dashboard_simpleloginapp.png" alt="Projek L">
+                <br><br>
+                <strong><a href="https://github.com/REYHANTU/Latihan-ASP.Net">Link Github Project Website Login Simple</a></strong>
+                <p>Januari 2025 - Januari 2025</p>
+                <p>Merancang aplikasi login berbasis website menggunakan framework ASP.Net</p>
+            </div>
+            <div class="project2" data-title="Projek M">
+                <h2 class="project-title">Shoe Store App</h2>
+                <img src="./gambar/projects/shoe_store_app.jpeg" alt="Projek M">
+                <br><br>
+                <strong><a href="https://github.com/REYHANTU/shoe_store_app">Link Github Project Shoe Store App</a></strong>
+                <p>Februari 2025 - Februari 2025</p>
+                <p>Merancang aplikasi mobile bertemakan jual beli sepatu menggunakan framework Flutter</p>
+            </div>
+            <div class="project1" data-title="Projek N">
+                <h2 class="project-title">Gemini AI bot to Discord</h2>
+                <img src="./gambar/projects/chatbot_gamini_in_discord.png" alt="Projek N">
+                <br><br>
+                <strong><a href="https://github.com/REYHANTU/Connect-Gemini-to-Discord">Link Github Project Gemini AI bot to Discord</a></strong>
+                <p>Februari 2025 - Februari 2025</p>
+                <p>Merancang aplikasi bot berbasis Gemini AI yang diimplementasikan ke aplikasi Discord</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Kontak:</p>
+        <p>
+            Nomor Telepon: +62 81907524798<br>
+            Email: reyhanmardjuki@gmail.com<br>
+            <a href="https://github.com/REYHANTU">Github</a>
+            <a href="https://www.instagram.com/reyhan_mardjuki/">Instagram</a>
+            <a href="https://www.linkedin.com/in/reyhan-reyhan-67709526b/">LinkedIn</a>
+            <a href="https://www.tiktok.com/@reyhan_mardjuki">TikTok</a>
+            <a href="https://web.facebook.com/reyhan.mardjuki.9">Facebook</a>
+            <a href="https://x.com/reyhan_mardjuki">Twitter</a>
+        </p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
