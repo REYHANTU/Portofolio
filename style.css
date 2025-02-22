@@ -7,8 +7,11 @@ body {
 header {
     background-color: black;
     color: white;
-    padding: 20px;
+    padding: 10px 20px;
     text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 header img {
     width: 165px;
@@ -150,8 +153,11 @@ footer a {
 }
 nav {
     background-color: deepskyblue;
-    padding: 10px 0;
+    padding: 8px 12px;
     text-align: center;
+    color: white;
+    text-decoration: none;
+    transition: background 0.3s;
 }
 nav ul {
     list-style: none;
@@ -171,12 +177,14 @@ nav ul li a {
 nav ul li a:hover {
     background-color: #00bcd4;
     border-radius: 5px;
+    background: rgba(255, 255, 255, 0.3);
 }
 /* Container */
 .container {
     padding: 20px;
-    width: 80%;
+    width: 90%;
     margin: auto;
+    max-width: 1200px;
 }
 /* Project & Sertifikasi */
 .project, .sertifikasi {
@@ -420,51 +428,19 @@ body.dark-mode {
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
 }
 
-/* Style untuk layar kecil (ponsel) */
+/* Mobile Responsive */
 @media (max-width: 768px) {
-    header img {
-        width: 120px;
-        height: 120px;
+    .header {
+        flex-direction: column;
+        text-align: center;
     }
-
-    header h1 {
-        font-size: 1.5em; /* Ukuran font lebih kecil */
+    
+    .nav {
+        flex-direction: column;
+        gap: 10px;
     }
-
-    .about-me, .languages, .organizations {
-        width: 95%; /* Lebar lebih besar di layar kecil */
-        padding: 20px; /* Padding lebih kecil */
-        font-size: 18px; /* Ukuran font lebih kecil */
-    }
-
-    .skills-container {
-        flex-direction: column; /* Menumpuk skill box di layar kecil */
-        align-items: center; /* Pusatkan skill box */
-        gap: 20px; /* Jarak antar skill box */
-    }
-
-    .skills-box {
-        width: 90%; /* Lebar skill box lebih lebar */
-    }
-
-    nav ul li {
-        display: block; /* Menumpuk item navigasi */
-        margin: 10px 0; /* Margin untuk item navigasi */
-    }
-
-    nav ul li a {
-        display: block; /* Membuat tautan navigasi menjadi blok */
-        width: 100%; /* Lebar tautan navigasi */
-        text-align: center; /* Pusatkan teks tautan navigasi */
-    }
-
-    .project img, .project1 img {
-        width: 100%; /* Gambar proyek memenuhi lebar layar */
-        height: auto; /* Tinggi gambar menyesuaikan */
-    }
-
-    .project2 img {
-        width: 100%;
-        height: auto;
+    
+    .container {
+        width: 95%;
     }
 }
