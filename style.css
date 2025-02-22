@@ -420,3 +420,9 @@ body.dark-mode {
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
 }
 
+/* Mobile Phone */
+@media (max-width: 450px) {
+    html {
+      font-size: 55%;
+    }
+}
