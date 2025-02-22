@@ -7,11 +7,8 @@ body {
 header {
     background-color: black;
     color: white;
-    padding: 10px 20px;
+    padding: 20px;
     text-align: center;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 header img {
     width: 165px;
@@ -153,11 +150,8 @@ footer a {
 }
 nav {
     background-color: deepskyblue;
-    padding: 8px 12px;
+    padding: 10px 0;
     text-align: center;
-    color: white;
-    text-decoration: none;
-    transition: background 0.3s;
 }
 nav ul {
     list-style: none;
@@ -177,14 +171,12 @@ nav ul li a {
 nav ul li a:hover {
     background-color: #00bcd4;
     border-radius: 5px;
-    background: rgba(255, 255, 255, 0.3);
 }
 /* Container */
 .container {
     padding: 20px;
-    width: 90%;
+    width: 80%;
     margin: auto;
-    max-width: 1200px;
 }
 /* Project & Sertifikasi */
 .project, .sertifikasi {
@@ -428,19 +420,3 @@ body.dark-mode {
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
 }
 
-/* Mobile Responsive */
-@media (max-width: 768px) {
-    .header {
-        flex-direction: column;
-        text-align: center;
-    }
-    
-    .nav {
-        flex-direction: column;
-        gap: 10px;
-    }
-    
-    .container {
-        width: 95%;
-    }
-}
