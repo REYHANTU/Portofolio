@@ -419,3 +419,52 @@ body.dark-mode {
     transform: translateY(-2px);
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
 }
+
+/* Style untuk layar kecil (ponsel) */
+@media (max-width: 768px) {
+    header img {
+        width: 120px;
+        height: 120px;
+    }
+
+    header h1 {
+        font-size: 1.5em; /* Ukuran font lebih kecil */
+    }
+
+    .about-me, .languages, .organizations {
+        width: 95%; /* Lebar lebih besar di layar kecil */
+        padding: 20px; /* Padding lebih kecil */
+        font-size: 18px; /* Ukuran font lebih kecil */
+    }
+
+    .skills-container {
+        flex-direction: column; /* Menumpuk skill box di layar kecil */
+        align-items: center; /* Pusatkan skill box */
+        gap: 20px; /* Jarak antar skill box */
+    }
+
+    .skills-box {
+        width: 90%; /* Lebar skill box lebih lebar */
+    }
+
+    nav ul li {
+        display: block; /* Menumpuk item navigasi */
+        margin: 10px 0; /* Margin untuk item navigasi */
+    }
+
+    nav ul li a {
+        display: block; /* Membuat tautan navigasi menjadi blok */
+        width: 100%; /* Lebar tautan navigasi */
+        text-align: center; /* Pusatkan teks tautan navigasi */
+    }
+
+    .project img, .project1 img {
+        width: 100%; /* Gambar proyek memenuhi lebar layar */
+        height: auto; /* Tinggi gambar menyesuaikan */
+    }
+
+    .project2 img {
+        width: 100%;
+        height: auto;
+    }
+}
